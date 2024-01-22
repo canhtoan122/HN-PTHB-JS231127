@@ -62,6 +62,10 @@ function renderStudent(){
             document.getElementById("email").value = students[check].email;
             document.getElementById("phone").value = students[check].phone;
             document.getElementById("country").value = students[check].country;
+            let gender = students[check].gender;
+            document.querySelector(`input[name="gender"][value="${gender}"]`).checked = true;
+        }else{
+            document.querySelector('input[name="gender"][value="nam"]').checked = true;
         }
     }
 }
