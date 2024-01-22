@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form>
+        <div class="title">
+            <h1>Thông tin học viên</h1>
+        </div>
+        <div class="container">
+            <div class="name">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" placeholder="vui lòng nhập tên">
+            </div>
+            <br>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="vui lòng nhập email">
+            </div>
+            <br>
+            <div class="phone">
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="text" id="phone" placeholder="vui lòng nhập số điện thoại">
+            </div>
+            <br>
+            <div class="country">
+                <label for="country">Quê quán:</label>
+                <input type="text" id="country" placeholder="vui lòng nhập địa chỉ quê quán">
+            </div>
+            <br>
+            <div class="gender">
+                <label for="gender">Giới tính:</label>
+                <input type="radio" name="gender" id="gender" value="nam">
+                <label for="gender">Nam</label>
+                <input type="radio" name="gender" id="gender" value="nữ">
+                <label for="gender">Nữ</label><br>
+            </div>
+            <br>
+            <button onclick="Save(event)">Lưu lại</button>
+        </div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./danhsachhocvien.css">
+</head>
+<body>
+    <form id="studentList">
+        <div class="title"><h1>Danh sách học viên</h1></div>
+        <div class="search">
+            <h1>Tìm kiếm tên học viên</h1>
+            <input type="text" id="search">
+            <button onclick="searchItem()">Tìm kiếm</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Điện Thoại</th>
+                    <th>Địa Chỉ</th>
+                    <th>Gender</th>
+                    <th>Hành Động</th>
+                    <th><button onclick="sortByName()">Sắp xếp (alpha B)</button></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </form>
+    <script src="./danhsachhocvien.js"></script>
+</body>
+</html>
