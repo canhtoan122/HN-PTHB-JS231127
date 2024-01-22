@@ -36,7 +36,6 @@ function deleteItem(name){
 }
 function editItem(name){
     let students = JSON.parse(localStorage.getItem("student")) || [];
-    console.log(name);
     let result = students.findIndex((item, index, array) =>{
         return item.name == name;
     });

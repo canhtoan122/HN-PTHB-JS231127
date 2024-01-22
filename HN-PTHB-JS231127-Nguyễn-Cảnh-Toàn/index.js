@@ -18,6 +18,7 @@ class Student{
         students[index].phone = document.getElementById("phone").value;
         students[index].country = document.getElementById("country").value;
         students[index].gender = document.querySelector('input[name="gender"]:checked').value;
+        students[index].isEditing = false;
     }
     validate() {
         let name = document.getElementById("name").value;
@@ -82,7 +83,6 @@ function Save(e){
     let gender = document.querySelector('input[name="gender"]:checked').value;
 
     let student = new Student(name, email, phone, country, gender, isEditing);
-    console.log(isEditing);
     if(students[0] != null && isEditing != false){
         let index = students.findIndex((item, index, array) =>{
             return item.isEditing == true;
